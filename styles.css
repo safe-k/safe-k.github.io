@@ -1,0 +1,25 @@
+/* root */
+body {
+    background-color: rgb(15, 15, 15);
+}
+a {
+    color:grey;
+}
+
+/* renderjson */
+.renderjson a {
+    text-decoration: none;
+}
+.renderjson .object.syntax {
+    color: rgb(243, 188, 46);
+}
+.renderjson .disclosure {
+    color: rgb(156, 39, 6);
+    font-size: 150%;
+}
+.renderjson .key {
+    color: rgb(202, 207, 207);
+}
+.renderjson .string {
+    color: rgb(212, 91, 18);
+}

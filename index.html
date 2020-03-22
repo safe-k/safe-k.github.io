@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Seif Kamal</title>
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content="A page about me."/>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <div id="me"></div>
+    </body>
+    <script src="https://cdn.rawgit.com/caldwell/renderjson/master/renderjson.js"></script>
+    <script>
+        const json = {
+            "me": "Seif Kamal",
+            "where-i-can-be-found": {
+                "github": "https://github.com/safe-k",
+                "linkedin": "https://linkedin.com/in/seif-kamal-894b1a110"
+            },
+            "some-stuff-i-made": {
+                "synth": {
+                    "what": "A monophonic synthesiser",
+                    "where": "https://safe-k.github.io/synth"
+                },
+                "gonnect": {
+                    "what": "An online matchmaking server",
+                    "where": "https://github.com/safe-k/gonnect"
+                },
+                "nav": {
+                    "what": "A file system location aliasing and navigation CLI tool",
+                    "where": "https://github.com/safe-k/nav"
+                },
+                "crast": {
+                    "what": "A directory based, flexible todo list CLI application",
+                    "where": "https://github.com/safe-k/crast"
+                }
+            }
+        }
+
+        renderjson.set_icons('↓', '↑').set_show_to_level(1);
+
+        document.getElementById("me").appendChild(renderjson(json));
+    </script>
+</html>
