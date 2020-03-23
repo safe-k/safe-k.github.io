@@ -5,6 +5,10 @@ body {
 a {
     color:grey;
 }
+::selection {
+    color: aliceblue;
+    background-color: #909090;
+}
 
 /* renderjson */
 .renderjson a {
