@@ -27,3 +27,7 @@ a {
 .renderjson .string {
     color: rgb(212, 91, 18);
 }
+.renderjson .syntax {
+    color: grey;
+}
+
